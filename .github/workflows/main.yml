@@ -33,4 +33,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          publish_branch: main  # Add this line if using main instead of gh-pages
+          publish_branch: gh-pages  # Change this from "main" to "gh-pages"
