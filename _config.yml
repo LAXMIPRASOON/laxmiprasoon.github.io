@@ -1,52 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishwar's Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-image: url('https://wallpaperaccess.com/full/896801.jpg');
-            background-size: cover;
-            color: white;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.5em;
-        }
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-        a:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-    </style>
-</head>
-<body>
-    <h1>Hey... It's me, Ishwar!</h1>
-    <p>Welcome Here!</p>
-
-    <!-- Links to other pages -->
-    
-    <a href="aboutme.html">About Me</a>
-    <a href="project.html">Projects</a>
-    <a href="Contact.html">Contact Me</a>
-</body>
-</html>
 title: Ishwar Netaam
 description: A passionate software developer specializing in web development.
 url: "https://ishwarnetam.github.io" # your site URL
@@ -65,13 +16,9 @@ author:
 
 # Social Links
 social:
-  - icon: github
-    link: "https://github.com/LAXMIPRASOON"
-  - icon: twitter
-    link: "https://twitter.com/yourusername"
-  - icon: linkedin
-    link: "https://linkedin.com/in/yourusername"
-  # Add more as needed
+  github: "https://github.com/LAXMIPRASOON"
+  twitter: "https://twitter.com/yourusername"
+  linkedin: "https://linkedin.com/in/yourusername"
 
 # Navigation
 navigation:
@@ -83,7 +30,6 @@ navigation:
     url: "/research.html"
   - title: Contact
     url: "/contact.html"
-  # Add more as needed
 
 # SEO Configuration
 seo:
@@ -104,5 +50,3 @@ seo:
 
 # Google Analytics (Optional)
 google_analytics: "UA-XXXXXXXXX-X"
-
-# Optional: Customize other settings as per Minima documentation
