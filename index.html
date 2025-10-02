@@ -14,6 +14,16 @@
             background-size: cover;
             color: white;
         }
+        /* NEW STYLE FOR IMAGE */
+        .profile-pic {
+            width: 150px; /* Standard Size */
+            height: 150px; /* Standard Size */
+            border-radius: 50%; /* Makes it circular */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border: 5px solid rgba(255, 255, 255, 0.5); /* A subtle white border */
+            margin-bottom: 20px;
+        }
+        /* END NEW STYLE */
         h1 {
             font-size: 3em;
             margin-bottom: 20px;
@@ -37,13 +47,14 @@
     </style>
 </head>
 <body>
+    <img src="Laxmi Prasoon Barik.png" alt="Laxmi Prasoon Barik Profile Picture" class="profile-pic">
+    
     <h1>Home page of Laxmi Prasoon Barik!</h1>
     <p>Welcome Here!</p>
 
-    <!-- Links to other pages -->
     <a href="aboutme.html">About Me</a>
     <a href="project.html">Projects</a>
     <a href="Contact.html">Contact Me</a>
-    <br> <a href="CV_Laxmi.pdf">You can download my cv from here</a>
+    <br> You can download my cv from <a href="CV_Laxmi.pdf">here</a>
 </body>
 </html>
