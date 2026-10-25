@@ -9,9 +9,12 @@
             font-family: Arial, sans-serif;
             padding: 50px;
             text-align: left; /* Align text to the left */
-            background-image: url('backgrounds/rm380-06.eps');
+            background-color: #111; /* Fallback if the image fails to load */
+            background-image: url('backgrounds/rm380-06.jpg');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Remove this line if it looks odd on phones */
             color: white;
             max-width: 800px; /* Limit the width for better readability */
             margin: auto; /* Center the content */
@@ -89,9 +92,9 @@
 <body>
     <a class="home-link" href="index.html">Home</a> <!-- Link to Home -->
     <h1>About Me</h1>
-    <p>Hello! I'm Laxmi Prasoon, an Integrated MSc graduate from the Center for Basic Sciences, Raipur. Currently, I am a PhD student at SPASE, IIT Kanpur
-    
-   <div class="section">
+    <p>Hello! I'm Laxmi Prasoon, an Integrated MSc graduate from the Center for Basic Sciences, Raipur. Currently, I am a PhD student at SPASE, IIT Kanpur.</p>
+
+<div class="section">
     <h2>Technical Skills</h2>
     <h3>Operating Systems:</h3>
     <p>Linux, Windows</p>
@@ -149,7 +152,6 @@
     </ul>
 </div>
 
-    
 <div class="section">
     <h2>Interests</h2>
     <p>In my free time, I enjoy:</p>
@@ -159,7 +161,6 @@
         <li>Engaging in science communication</li>
     </ul>
 </div>
-    
 
     <a href="index.html">Go to Home</a>
 </body>
