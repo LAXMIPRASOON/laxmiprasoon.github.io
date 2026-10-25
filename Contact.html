@@ -4,34 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome CDN -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 50px;
+            padding: 50px 20px;
+            margin: 0;
             text-align: center;
-            background-image: url('backgrounds/geometric-bokeh_cropped.jpg');
-            background-size: cover; 
-            background-position: center; 
-            color: white; 
+            background-color: #111; /* Fallback if the image fails to load */
+            background-image: url('backgrounds/5467977.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Remove this line if it looks odd on phones */
+            color: white;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            position: relative;
         }
         h1 {
             font-size: 3em;
-            margin-bottom: 20px;
+            margin: 0 0 10px;
         }
         p {
             font-size: 1.2em;
             line-height: 1.5;
+            margin: 10px 0;
         }
         .contact-info {
             margin: 20px 0;
-            padding: 20px;
+            padding: 25px;
             background: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
             border-radius: 10px;
         }
-        a {
+        .contact-info p {
+            margin: 15px 0;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: #add8e6;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
+        }
+        .contact-info a:hover {
+            color: #add8e6;
+            border-bottom-color: #add8e6;
+        }
+        .social-icons {
+            margin-top: 25px;
+        }
+        .social-icons a {
             display: inline-block;
-            margin-top: 20px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 8px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .social-icons a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-3px);
+        }
+        .home-link, .top-link {
+            display: inline-block;
             padding: 10px 20px;
             background-color: rgba(255, 255, 255, 0.2);
             color: white;
@@ -39,34 +84,42 @@
             border-radius: 5px;
             font-size: 1.2em;
         }
-        a:hover {
+        .home-link {
+            margin-top: 30px;
+        }
+        .top-link {
+            position: absolute;
+            top: -35px;
+            left: 0;
+            padding: 10px;
+            font-size: 1.1em;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .home-link:hover, .top-link:hover {
             background-color: rgba(255, 255, 255, 0.3);
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            font-size: 1.5em; /* Larger icon size */
-            color: white; /* Icon color */
         }
     </style>
 </head>
 <body>
-     <a class="home-link" href="index.html">Home</a> <!-- Link to Home -->
-    <h1>Contact Me</h1>
-    <p>You can reach me at:</p>
-    <div class="contact-info">
-        <p>Email: <a href="mailto:laxmiprasunbarik@gmail.com" style="color: white;">laxmiprasunbarik@gmail.com</a></p>
-<p>Contact Number: <a href="tel:+91 9754580761" style="color: white;">+91 9754580761</a></p> <!-- Make the number clickable -->
-    </div>
+    <div class="container">
+        <a class="top-link" href="index.html">Home</a>
+        <h1>Contact Me</h1>
+        <p>You can reach me at:</p>
 
-    <div class="social-icons">
-        <a href="https://www.instagram.com/yourusername" target="_blank" class="fab fa-instagram"></a> <!-- Instagram Logo -->
-        <a href="https://www.linkedin.com/in/laxmi-prasoon-barik" target="_blank" class="fab fa-linkedin"></a> <!-- LinkedIn Logo -->
-        <!-- Add more social media links as needed -->
-    </div>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i>Email: <a href="mailto:laxmiprasunbarik@gmail.com">laxmiprasunbarik@gmail.com</a></p>
+            <!--<p><i class="fas fa-phone"></i>Contact Number: <a href="tel:+919754580761">+91 9754580761</a></p> -->
+        </div>
 
-    <a href="index.html" style="color: white;">Home</a>
+        <div class="social-icons">
+            <!-- Add your real Instagram link here, then remove the comment markers
+            <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            -->
+            <a href="https://www.linkedin.com/in/laxmi-prasoon-barik" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Add more social media links as needed -->
+        </div>
+
+        <a class="home-link" href="index.html">Go to Home</a>
+    </div>
 </body>
 </html>
