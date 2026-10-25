@@ -7,48 +7,122 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 50px;
-            text-align: left;
-            background-image: url('backgrounds/abstract-fire-style-background_cropped.jpg');
+            padding: 50px 20px;
+            margin: 0;
+            background-color: #111; /* Fallback if the image fails to load */
+            background-image: url('backgrounds/5439224.jpg');
             background-size: cover;
             background-position: center;
-            color: white; /* White text for better contrast */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Remove this line if it looks odd on phones */
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            margin: 0 0 10px;
+        }
+        .intro {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 30px;
         }
         .overlay {
             background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
-            padding: 20px;
-            border-radius: 10px; /* Rounded corners */
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+        .project {
+            display: block;
+            margin: 15px 0;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #add8e6;
+            border-radius: 5px;
+            color: #add8e6;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 1.4;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .project:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateX(5px);
+        }
+        .project small {
+            display: block;
+            margin-top: 5px;
+            color: #ddd;
+            font-size: 0.75em;
+        }
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .home-link:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .top-link {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .top-link:hover {
+            background: rgba(255, 255, 255, 0.3);
         }
     </style>
 </head>
 <body>
-    <div class="overlay">
-        <h1>My Projects</h1>
-        <p>Here are some of the projects I have worked on:</p>
-        <ul>
-            <li><a href="Shack-Hartmann-based atmospheric turbulence monitor.pdf" style="color: #add8e6;">"Shack-Hartmann Based Atmospheric Turbulence
-Monitor"</a></li>
-        </ul>
+    <div class="container">
+        <a class="top-link" href="index.html">Home</a>
+        <div class="overlay">
+            <h1>My Projects</h1>
+            <p class="intro">Here are some of the projects I have worked on:</p>
 
-        <ul>
-            <li><a href="Atmospheric Characterization Using Shack-Hartmann Image Motion Monitor.pdf" style="color: #add8e6;">"Atmospheric Characterization Using Shack-Hartmann Image Motion Monitor" </a></li>
-        </ul>
+            <a class="project" href="Shack-Hartmann-based%20atmospheric%20turbulence%20monitor.pdf" target="_blank" rel="noopener">
+                Shack-Hartmann Based Atmospheric Turbulence Monitor
+                <small>PDF</small>
+            </a>
 
-         <ul>
-            <li><a href="Detection and Study of Characteristics of Quasars Using SDSS.pdf" style="color: #add8e6;">"Detection and Study of Characteristics of
-Quasars Using SDSS"</a></li>
-        </ul>
+            <a class="project" href="Atmospheric%20Characterization%20Using%20Shack-Hartmann%20Image%20Motion%20Monitor.pdf" target="_blank" rel="noopener">
+                Atmospheric Characterization Using Shack-Hartmann Image Motion Monitor
+                <small>PDF</small>
+            </a>
 
-         <ul>
-            <li><a href="Beyond Our Solar System: Discovering the Exoplanets.pdf" style="color: #add8e6;">"Beyond Our Solar System: Discovering the
-Exoplanets" </a></li>
-        </ul>
+            <a class="project" href="Detection%20and%20Study%20of%20Characteristics%20of%20Quasars%20Using%20SDSS.pdf" target="_blank" rel="noopener">
+                Detection and Study of Characteristics of Quasars Using SDSS
+                <small>PDF</small>
+            </a>
 
-         <ul>
-            <li><a href="ATOM BASED ELECTRIC FIELD SENSING.pdf" style="color: #add8e6;">"Atom-Based Electric Field Sensing" </a></li>
-        </ul>
-        
-        <a href="index.html" style="color: #add8e6;">Go back to Home</a>
+            <a class="project" href="Beyond%20Our%20Solar%20System%3A%20Discovering%20the%20Exoplanets.pdf" target="_blank" rel="noopener">
+                Beyond Our Solar System: Discovering the Exoplanets
+                <small>PDF</small>
+            </a>
+
+            <a class="project" href="ATOM%20BASED%20ELECTRIC%20FIELD%20SENSING.pdf" target="_blank" rel="noopener">
+                Atom-Based Electric Field Sensing
+                <small>PDF</small>
+            </a>
+
+            <a class="home-link" href="index.html">Go back to Home</a>
+        </div>
     </div>
 </body>
 </html>
